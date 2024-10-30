@@ -1,0 +1,74 @@
+{
+    "$schema": "https://json.schemastore.org/block.json",
+    "apiVersion": 2,
+    "name": "small-plugins/post-term",
+    "title": "Post Term",
+    "category": "text",
+    "description": "Display a post taxonomy term link.",
+    "keywords": [
+        "category",
+        "labels"
+    ],
+    "attributes": {
+        "term": {
+            "type": "object",
+            "default": {}
+        },
+        "opensInNewTab": {
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "usesContext": [
+        "category-labels-block/scope-to-current-post",
+        "category-labels-block/display-primary",
+        "category-labels-block/fallback-primary",
+        "category-labels-block/limit"
+    ],
+    "providesContext": {
+        "term": "term"
+    },
+    "version": "1.0.0",
+    "textdomain": "category-labels-block",
+    "editorScript": "category-link-block-script",
+    "parent": [
+        "small-plugins/category-labels"
+    ],
+    "supports": {
+        "typography": {
+            "fontSize": true,
+            "lineHeight": true,
+            "__experimentalFontStyle": true,
+            "__experimentalFontWeight": true,
+            "__experimentalTextTransform": true,
+            "__experimentalFontFamily": true,
+            "__experimentalLetterSpacing": true,
+            "__experimentalTextDecoration": true,
+            "__experimentalSkipSerialization": [
+                "textDecoration"
+            ],
+            "__experimentalDefaultControls": {
+                "fontSize": true
+            }
+        },
+        "__experimentalBorder": true,
+        "spacing": {
+            "padding": true,
+            "blockGap": true
+        },
+        "color": {
+            "background": true,
+            "link": false,
+            "text": true
+        },
+        "layout": {
+            "allowSwitching": false,
+            "allowInheriting": false,
+            "allowVerticalAlignment": false,
+            "allowSizingOnChildren": true,
+            "default": {
+                "type": "flex"
+            }
+        }
+    }
+}

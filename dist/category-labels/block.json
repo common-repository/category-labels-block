@@ -1,0 +1,83 @@
+{
+    "$schema": "https://json.schemastore.org/block.json",
+    "apiVersion": 2,
+    "name": "small-plugins/category-labels",
+    "title": "Category Labels",
+    "category": "text",
+    "description": "Display a subset of relevant post categories/taxonomies.",
+    "keywords": [
+        "category",
+        "labels"
+    ],
+    "attributes": {
+        "scopeToCurrentPost": {
+            "type": "boolean",
+            "default": true
+        },
+        "displayPrimary": {
+            "type": "boolean",
+            "default": false
+        },
+        "fallbackPrimary": {
+            "type": "boolean",
+            "default": true
+        },
+        "limitCategories": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "providesContext": {
+        "category-labels-block/scope-to-current-post": "scopeToCurrentPost",
+        "category-labels-block/display-primary": "displayPrimary",
+        "category-labels-block/fallback-primary": "fallbackPrimary",
+        "category-labels-block/limit": "limitCategories"
+    },
+    "version": "1.0.0",
+    "textdomain": "category-labels-block",
+    "editorScript": "category-labels-block-script",
+    "editorStyle": "category-labels-block-editor-style",
+    "style": "category-labels-block-frontend-style",
+    "supports": {
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": true
+        },
+        "align": [
+            "full",
+            "wide"
+        ],
+        "color": {
+            "background": true,
+            "link": true,
+            "text": false
+        },
+        "layout": {
+            "allowSwitching": false,
+            "allowInheriting": false,
+            "allowVerticalAlignment": false,
+            "allowSizingOnChildren": true,
+            "default": {
+                "type": "flex",
+                "flexWrap": "nowrap"
+            }
+        },
+        "typography": {
+            "fontSize": true,
+            "lineHeight": true,
+            "__experimentalFontStyle": true,
+            "__experimentalFontWeight": true,
+            "__experimentalTextTransform": true,
+            "__experimentalFontFamily": true,
+            "__experimentalLetterSpacing": true,
+            "__experimentalTextDecoration": true,
+            "__experimentalSkipSerialization": [
+                "textDecoration"
+            ],
+            "__experimentalDefaultControls": {
+                "fontSize": true
+            }
+        }
+    }
+}

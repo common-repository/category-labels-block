@@ -1,0 +1,74 @@
+{
+    "$schema": "https://json.schemastore.org/block.json",
+    "apiVersion": 2,
+    "name": "small-plugins/term-abbreviation",
+    "title": "Term Abbreviation",
+    "category": "text",
+    "description": "Display a post term abbreviation.",
+    "keywords": [
+        "category",
+        "labels"
+    ],
+    "attributes": {
+        "content": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "version": "1.0.0",
+    "textdomain": "category-labels-block",
+    "editorScript": "category-abbreviation-block-script",
+    "parent": [
+        "small-plugins/post-term"
+    ],
+    "supports": {
+        "typography": {
+            "fontSize": true,
+            "lineHeight": true,
+            "__experimentalFontStyle": true,
+            "__experimentalFontWeight": true,
+            "__experimentalTextTransform": true,
+            "__experimentalFontFamily": true,
+            "__experimentalLetterSpacing": true,
+            "__experimentalTextDecoration": true,
+            "__experimentalSkipSerialization": [
+                "textDecoration"
+            ],
+            "__experimentalDefaultControls": {
+                "fontSize": true
+            }
+        },
+        "__experimentalBorder": {
+            "color": true,
+            "radius": true,
+            "style": true,
+            "width": true,
+            "__experimentalDefaultControls": {
+                "color": true,
+                "radius": true,
+                "style": true,
+                "width": true
+            }
+        },
+        "border": {
+            "color": true,
+            "radius": true,
+            "style": true,
+            "width": true,
+            "__experimentalDefaultControls": {
+                "color": true,
+                "radius": true,
+                "style": true,
+                "width": true
+            }
+        },
+        "spacing": {
+            "padding": true
+        },
+        "color": {
+            "background": true,
+            "link": false,
+            "text": true
+        }
+    }
+}

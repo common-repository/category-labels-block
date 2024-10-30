@@ -1,0 +1,74 @@
+{
+    "$schema": "https://json.schemastore.org/block.json",
+    "apiVersion": 2,
+    "name": "small-plugins/term-name",
+    "title": "Term Name",
+    "category": "text",
+    "description": "Display a post term name.",
+    "keywords": [
+        "category",
+        "labels"
+    ],
+    "attributes": {},
+    "version": "1.0.0",
+    "textdomain": "category-labels-block",
+    "editorScript": "category-name-block-script",
+    "editorStyle": "category-name-block-editor-style",
+    "style": "category-name-block-frontend-style",
+    "parent": [
+        "small-plugins/post-term"
+    ],
+    "usesContext": [
+        "term"
+    ],
+    "supports": {
+        "typography": {
+            "fontSize": true,
+            "lineHeight": true,
+            "__experimentalFontStyle": true,
+            "__experimentalFontWeight": true,
+            "__experimentalTextTransform": true,
+            "__experimentalFontFamily": true,
+            "__experimentalLetterSpacing": true,
+            "__experimentalTextDecoration": true,
+            "__experimentalSkipSerialization": [
+                "textDecoration"
+            ],
+            "__experimentalDefaultControls": {
+                "fontSize": true
+            }
+        },
+        "__experimentalBorder": {
+            "color": true,
+            "radius": true,
+            "style": true,
+            "width": true,
+            "__experimentalDefaultControls": {
+                "color": true,
+                "radius": true,
+                "style": true,
+                "width": true
+            }
+        },
+        "border": {
+            "color": true,
+            "radius": true,
+            "style": true,
+            "width": true,
+            "__experimentalDefaultControls": {
+                "color": true,
+                "radius": true,
+                "style": true,
+                "width": true
+            }
+        },
+        "spacing": {
+            "padding": true
+        },
+        "color": {
+            "background": true,
+            "link": false,
+            "text": true
+        }
+    }
+}
